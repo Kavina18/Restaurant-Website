@@ -1,0 +1,49 @@
+:root{
+    --black:#232931;
+    --red:#F73859;
+    --sandal:#e9b543;
+    --white: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(blue,rgb(11, 11, 150),rgb(4, 4, 118),black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+h1{
+    color: var(--sandal);
+    min-width: 260px;
+    animation-duration: 3s;
+    animation-name: order;
+    animation-iteration-count: infinite;
+}
+
+@keyframes order{
+    0%{
+        color: var(--sandal);
+    }
+    10%{
+        transform:scale(1);
+        color: var(--red);
+    }
+    35%{
+        transform:scale(2);
+        color: var(--red);
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: green;
+    }
+}
+

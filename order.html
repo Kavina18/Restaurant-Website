@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="orderpage_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Details</h1>
+        <form action="submit_order.html" method="">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="item">Select Item:</label>
+                <select id="item" name="item" required>
+                    <option value="Spring Rolls">Spring Rolls	₹ 20</option>
+                    <option value="Garlic Bread">Garlic Bread	₹ 20</option>
+                    <option value="Chicken Wings">Chicken Wings	₹ 250</option>
+                    <option value="Bruschetta">Bruschetta	₹ 300</option>
+                    <option value="Chocolate Cake">Chocolate Cake	₹ 50</option>
+                    <option value="Cheesecake">Cheesecake	₹ 70</option>
+                    <option value="Tiramisu">Tiramisu	₹ 150</option>
+                    <option value="Ice Cream">Ice Cream	₹ 60</option>
+                    <option value="Pancakes">Pancakes	₹ 100</option>
+                    <option value="Scrambled Eggs">Scrambled Eggs	₹ 180</option>
+                    <option value="French Toast">French Toast	₹ 125</option>
+                    <option value="Oatmeal">Oatmeal	₹ 180</option>
+                    <option value="Fruit Salad">Fruit Salad	₹ 200</option>
+                    <option value="Grilled Cheese Sandwich">Grilled Cheese Sandwich	₹ 85</option>
+                    <option value="Caesar Salad">Caesar Salad	₹ 149</option>
+                    <option value="Chicken Wrap">Chicken Wrap	₹ 250</option>
+                    <option value="Burger with Fries">Burger with Fries	₹ 285</option>
+                    <option value="Pasta Alfredo">Pasta Alfredo	₹ 270</option>
+                    <option value="Grilled Salmon">Grilled Salmon	₹ 529</option>
+                    <option value="Roast Beef">Roast Beef	₹ 649</option>
+                    <option value="Chicken Parmesan">Chicken Parmesan	₹ 299</option>
+                    <option value="Vegetable Lasagna">Vegetable Lasagna	₹ 150</option>
+                    <option value="Lamb Chops">Lamb Chops	₹ 495</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <p>*Cash on Delivery only</p>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
